@@ -37,5 +37,5 @@ pipelines:
             - echo ${FORCE_CHART}
             - echo ${env2}
             - echo "Checking helm 3 version"
-            - helm3 version
+            - helm version
             - sleep 10
