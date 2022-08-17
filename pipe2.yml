@@ -1,30 +1,9 @@
-resources:
-  - name: mainRepo
-    type: GitRepo
-    configuration:
-      gitProvider: jfrog_github
-      path: ~ojh302846/jpipe
-      branches:
-        include: master
-
 pipelines:
   - name: basic_pipeline
     steps:
-      - name: step_1
-        type: Bash
-        configuration:
-          inputResources:
-            - name: mainRepo
-        execution:
-          onExecute:
-            - printenv
-            - echo $res_mainRepo_commitSha
 
       - name: step_2
         type: Bash
-        configuration:
-          inputSteps:
-            - name: step_1
         execution:
           onExecute:
             - echo "Hello world!"
