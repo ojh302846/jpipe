@@ -2,7 +2,7 @@ resources:
   - name: mainRepo
     type: GitRepo
     configuration:
-      gitProvider: jfrog_bitbucket
+      gitProvider: jfrog_github
       path: ~ojh302846/jpipe
       branches:
         include: master
