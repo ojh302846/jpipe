@@ -7,7 +7,6 @@ pipelines:
         execution:
           onExecute:
             - echo "Hello world!"
-            - echo $first_stepid
 
       - name: step_3
         type: Bash
@@ -17,4 +16,3 @@ pipelines:
         execution:
           onExecute:
             - echo "Hello world!"
-            - echo $first_stepid
